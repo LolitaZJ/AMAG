@@ -39,7 +39,7 @@ or You can use [INSTANCE](https://github.com/niyiyu/PNW-ML) data to train model
 First, you need to set --data_path your/hdf5/ path --csv_path your/csv/path. 
 
 `Fast Train and Test`
->     nohup python Atten_EEW_MASTER_ALL.py --data_path your/hdf5/ path --csv_path your/csv/path --batch_size=1024 --loss=mse --save_name=AMAG_d4k5 --depth=4 --kernel_size=5 --ratio=0 --mode=train --GPU=3 --epoch=  > AMAG_d4k5.txt 2>&1 &
+>     nohup python Atten_EEW_MASTER_ALL.py --data_path your/hdf5/path --csv_path your/csv/path --batch_size=1024 --loss=mse --save_name=AMAG_d4k5 --depth=4 --kernel_size=5 --ratio=0 --mode=train --GPU=3 --epoch=  > AMAG_d4k5.txt 2>&1 &
 
 --loss mse: choose mse as Loss function;     
 --depth 4 : set the depth of network 4;   
@@ -47,12 +47,12 @@ First, you need to set --data_path your/hdf5/ path --csv_path your/csv/path.
 --GPU 3: if don't have GPU, set -1;
 
 `Train and Test`
->     nohup python Atten_EEW_MASTER_ALL.py --fast False --data_path your/hdf5/ path --csv_path your/csv/path --batch_size=1024 --loss=mse --save_name=AMAG_d4k5 --depth=4 --kernel_size=5 --ratio=0 --mode=train --GPU=3 > AMAG_d4k5.txt 2>&1 &
+>     nohup python Atten_EEW_MASTER_ALL.py --fast False --data_path your/hdf5/path --csv_path your/csv/path --batch_size=1024 --loss=mse --save_name=AMAG_d4k5 --depth=4 --kernel_size=5 --ratio=0 --mode=train --GPU=3 > AMAG_d4k5.txt 2>&1 &
 
 If you want to use INSTANCE to train model
 set --stead Fasle and --data_path your/instance/hdf5/ path --csv_path your/instance/csv/path. 
 
 `INSTANCE`
->     nohup python Atten_EEW_MASTER_ALL.py --stead False --data_path your/hdf5/ path --csv_path your/csv/path --batch_size=1024 --loss=mse --save_name=AMAG_d4k5 --depth=4 --kernel_size=5 --ratio=0 --mode=train --GPU=3 > AMAG_d4k5.txt 2>&1 &
+>     nohup python Atten_EEW_MASTER_ALL.py --stead False --data_path your/instance/hdf5/ path --csv_path your/instance/csv/path --batch_size=1024 --loss=mse --save_name=AMAG_d4k5 --depth=4 --kernel_size=5 --ratio=0 --mode=train --GPU=3 > AMAG_d4k5.txt 2>&1 &
 
 ------------------------------------------- 
