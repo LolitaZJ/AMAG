@@ -57,3 +57,9 @@ set --stead Fasle and --data_path your/instance/hdf5/ path --csv_path your/insta
 >     nohup python Atten_EEW_MASTER_ALL.py --stead False --data_path your/instance/hdf5/ path --csv_path your/instance/csv/path --batch_size=1024 --loss=mse --save_name=AMAG_d4k5 --depth=4 --kernel_size=5 --ratio=0 --mode=train --GPU=3 > AMAG_d4k5.txt 2>&1 &
 
 ------------------------------------------- 
+### Model:
+
+You can use the model **AMAG_d4k5.h5** trained on the STEAD dataset to predict magnitude.
+You may need to re-train or refine the model with your own dataset. 
+
+------------------------------------------- 
